@@ -385,18 +385,110 @@ To mitigate sample selection bias, PSM-DID is applied with three matching strate
 
 Table 9 reports consistent positive and significant coefficients of `did` across all matching methods, further confirming the policy’s effect.  
 
+**Table 9. PSM-DID Regression Results**
+
+| VARIABLES   | (1) 1:3 Nearest Neighbor Matching | (2) Radius Caliper Matching | (3) Kernel Matching |
+|-------------|----------------------------------|-----------------------------|----------------------|
+| did         | 0.007**                          | 0.006*                      | 0.005*              |
+|             | (2.13)                           | (1.82)                      | (1.81)              |
+| lev         | -0.016**                         | -0.020***                   | -0.021***           |
+|             | (-2.27)                          | (-2.93)                     | (-3.41)             |
+| ato         | 0.006                            | 0.005                       | 0.006*              |
+|             | (1.53)                           | (1.44)                      | (1.67)              |
+| cashflow    | 0.026**                          | 0.032**                     | 0.029**             |
+|             | (2.04)                           | (2.50)                      | (2.52)              |
+| inv         | 0.019                            | 0.025*                      | 0.026**             |
+|             | (1.34)                           | (1.76)                      | (2.03)              |
+| growth      | -0.000                           | 0.001                       | -0.000              |
+|             | (-0.21)                          | (0.42)                      | (-0.11)             |
+| board       | 0.002                            | 0.001                       | -0.000              |
+|             | (0.27)                           | (0.15)                      | (-0.06)             |
+| indep       | 0.000                            | 0.000                       | 0.000               |
+|             | (0.24)                           | (0.23)                      | (0.17)              |
+| firmage     | 0.012                            | 0.013                       | 0.010               |
+|             | (1.07)                           | (1.15)                      | (0.99)              |
+| Constant    | 0.046                            | 0.046                       | 0.060               |
+|             | (1.06)                           | (1.06)                      | (1.53)              |
+| Observations| 10,073                           | 10,073                      | 10,073              |
+| R-squared   | 0.702                            | 0.693                       | 0.686               |
+
 
 
 ### 4.4.6 Excluding Other Concurrent Policies  
 
 Table 10 incorporates concurrent regional policies such as Low-Carbon City pilots, ETS pilots, and Smart City pilots as controls. The coefficient of `did` remains positive and significant, indicating the effect is independent of these policies.  
 
+**Table 10. Regression Results after Excluding Other Policy Effects**
+
+| VARIABLES   | (1) Low-Carbon Pilot | (2) Low-Carbon Pilot | (3) ETS Pilot | (4) ETS Pilot | (5) Smart-City Pilot | (6) Smart-City Pilot | (7) All Policies | (8) All Policies |
+|-------------|----------------------|----------------------|---------------|---------------|-----------------------|----------------------|------------------|------------------|
+| did         | 0.006**              | 0.007***             | 0.007***      | 0.008***      | 0.006**               | 0.007**              | 0.008***         | 0.008***         |
+|             | (2.40)               | (2.62)               | (2.70)        | (2.92)        | (2.34)                | (2.57)               | (2.73)           | (2.96)           |
+| didcarbon   | 0.001                | 0.001                |               |               | 0.002                 | 0.002                |                  |                  |
+|             | (0.37)               | (0.36)               |               |               | (0.63)                | (0.61)               |                  |                  |
+| didets      |                      |                      | -0.008**      | -0.008**      |                       |                       | -0.008**         | -0.008**         |
+|             |                      |                      | (-2.21)       | (-2.20)       |                       |                       | (-2.25)          | (-2.25)          |
+| didsmart    |                      |                      |               |               | -0.001                | -0.000               | -0.001           | -0.000           |
+|             |                      |                      |               |               | (-0.20)               | (-0.12)              | (-0.15)          | (-0.07)          |
+| lev         |                      | -0.019***            |               | -0.018***     |                       | -0.019***            |                  | -0.018***        |
+|             |                      | (-3.25)              |               | (-3.14)       |                       | (-3.24)              |                  | (-3.14)          |
+| ato         |                      | 0.006**              |               | 0.007**       |                       | 0.006**              |                  | 0.007**          |
+|             |                      | (2.05)               |               | (2.13)        |                       | (2.05)               |                  | (2.12)           |
+| cashflow    |                      | 0.031***             |               | 0.031***      |                       | 0.031***             |                  | 0.031***         |
+|             |                      | (2.71)               |               | (2.70)        |                       | (2.72)               |                  | (2.70)           |
+| inv         |                      | 0.024**              |               | 0.025**       |                       | 0.024**              |                  | 0.025**          |
+|             |                      | (2.07)               |               | (2.14)        |                       | (2.06)               |                  | (2.14)           |
+| growth      |                      | -0.001               |               | -0.001        |                       | -0.001               |                  | -0.001           |
+|             |                      | (-0.47)              |               | (-0.49)       |                       | (-0.47)              |                  | (-0.49)          |
+| board       |                      | 0.001                |               | 0.001         |                       | 0.001                |                  | 0.001            |
+|             |                      | (0.13)               |               | (0.10)        |                       | (0.13)               |                  | (0.12)           |
+| indep       |                      | 0.000                |               | 0.000         |                       | 0.000                |                  | 0.000            |
+|             |                      | (0.36)               |               | (0.36)        |                       | (0.36)               |                  | (0.37)           |
+| firmage     |                      | 0.008                |               | 0.008         |                       | 0.008                |                  | 0.008            |
+|             |                      | (0.92)               |               | (0.89)        |                       | (0.92)               |                  | (0.87)           |
+| Constant    | 0.088***             | 0.060*               | 0.091***      | 0.063*        | 0.089***              | 0.060*               | 0.090***         | 0.062*           |
+|             | (41.96)              | (1.83)               | (69.39)       | (1.94)        | (59.96)               | (1.86)               | (36.25)          | (1.91)           |
+| Observations| 11,909               | 11,909               | 11,909        | 11,909        | 11,909                | 11,909               | 11,909           | 11,909           |
+| R-squared   | 0.683                | 0.683                | 0.683         | 0.684         | 0.683                 | 0.683                | 0.683            | 0.684            |
+
+
 
 ### 4.4.7 Alternative Dependent Variables  
 
-To validate robustness, alternative proxies for green transformation are used: carbon performance (`cperf`) and green investment ratio (`epi`).  
+To ensure robustness, we replace the main dependent variable with two alternative measures of green transformation:  
 
-Table 11 shows that `did` significantly improves both indicators, confirming that the findings do not depend on a particular measure of green transformation.  
+- **Carbon performance (cperf):** Measures how well firms reduce carbon emissions relative to their operations.  
+- **Green investment ratio (epi):** Captures the share of firm resources allocated to environmental protection and green projects.  
+
+Table 11 shows that the policy variable (`did`) significantly improves both indicators, confirming that the results are not driven by the choice of a single measure of green transformation.  
+
+**Table 11. Regression Results after Replacing Dependent Variables**
+
+| VARIABLES   | (1) cperf | (2) cperf | (3) epi | (4) epi |
+|-------------|-----------|-----------|---------|---------|
+| did         | 0.055***  | 0.054***  | 0.116** | 0.111** |
+|             | (2.69)    | (2.59)    | (2.09)  | (2.01)  |
+| lev         |           | 0.171***  |         | 0.425***|
+|             |           | (3.72)    |         | (3.35)  |
+| ato         |           | 0.047*    |         | -0.063  |
+|             |           | (1.71)    |         | (-0.90) |
+| cashflow    |           | -0.020    |         | -0.498**|
+|             |           | (-0.23)   |         | (-2.07) |
+| inv         |           | -0.073    |         | -0.562**|
+|             |           | (-0.76)   |         | (-2.23) |
+| growth      |           | 0.025*    |         | 0.044   |
+|             |           | (1.76)    |         | (1.25)  |
+| board       |           | -0.018    |         | -0.112  |
+|             |           | (-0.32)   |         | (-0.72) |
+| indep       |           | 0.000     |         | 0.000   |
+|             |           | (0.15)    |         | (0.01)  |
+| firmage     |           | -0.051    |         | -0.499**|
+|             |           | (-0.76)   |         | (-2.55) |
+| Constant    | 0.628***  | 0.711***  | 0.253***| 1.901***|
+|             | (97.37)   | (2.82)    | (14.39) | (2.61)  |
+| Observations| 9,610     | 9,610     | 9,561   | 9,561   |
+| R-squared   | 0.787     | 0.788     | 0.448   | 0.450   |
+
 
 
 ---
