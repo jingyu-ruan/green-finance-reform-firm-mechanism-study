@@ -682,7 +682,126 @@ Thus, **policy effects concentrate in the eastern region**, where market mechani
 
 ## 🔗 Mechanism Analysis
 
-1. Mediation Effect: R&D Investment  
+1. Mediation Effect: R&D Investment
+
+The previous regressions confirm that the GFRIPZ policy significantly promotes corporate green transformation. This section explores **how** the policy works by testing two channels: (i) a **mediating effect** through R&D investment, and (ii) **moderating effects** of digitalization and financing constraints.  
+
+According to Hypothesis H2, green finance alleviates financing pressure and guides resources into innovation, thereby increasing R&D investment and enhancing green transformation. Following the three-step procedure, we test whether R&D investment (`lnrd`) serves as a mediator.  
+
+- **Step 1 (total effect):** Column (1) shows `did` is positive and significant at the 1% level, consistent with baseline results.  
+- **Step 2 (policy → mediator):** Column (2) shows `did` significantly increases R&D investment (`lnrd`), with a coefficient of 0.372 (5% level).  
+- **Step 3 (policy + mediator):** Column (3) shows `lnrd` is positive and significant at the 1% level. Meanwhile, the coefficient of `did` falls to insignificance.  
+
+These results confirm a **full mediation effect**: the policy promotes green transformation primarily by stimulating R&D investment.  
+
+**Table 17. Mediation Analysis: R&D Investment** 
+| VARIABLES   | (1) index | (2) lnrd | (3) index |
+|-------------|-----------|----------|-----------|
+| lnrd        |           |          | 0.001***  |
+|             |           |          | (2.82)    |
+| did         | 0.007***  | 0.372**  | 0.007     |
+|             | (2.60)    | (1.96)   | (1.61)    |
+| lev         | -0.019*** | -0.550   | -0.019**  |
+|             | (-3.25)   | (-1.36)  | (-2.45)   |
+| ato         | 0.006**   | 0.422*   | 0.006     |
+|             | (2.06)    | (1.88)   | (1.43)    |
+| cashflow    | 0.031***  | 0.633    | 0.032***  |
+|             | (2.71)    | (0.79)   | (2.77)    |
+| inv         | 0.024**   | -2.629***| 0.026     |
+|             | (2.06)    | (-3.26)  | (1.57)    |
+| growth      | -0.001    | 0.171    | -0.001    |
+|             | (-0.47)   | (1.43)   | (-0.51)   |
+| board       | 0.001     | 0.004    | 0.000     |
+|             | (0.12)    | (0.01)   | (0.04)    |
+| indep       | 0.000     | -0.019   | 0.000     |
+|             | (0.35)    | (-1.24)  | (0.26)    |
+| firmage     | 0.008     | -5.492***| 0.012     |
+|             | (0.92)    | (-9.15)  | (0.85)    |
+| Constant    | 0.060*    | 32.254***| 0.038     |
+|             | (1.85)    | (14.40)  | (0.77)    |
+| Observations| 11,909    | 11,909   | 11,909    |
+| R-squared   | 0.683     | 0.766    | 0.684     |
+
 2. Moderation Effect: Digitalization and Financing Constraints  
 
----
+We next examine whether firm characteristics affect the strength of the policy impact, focusing on **digitalization** and **financing constraints**.  
+
+**(a) Digitalization**  
+Hypothesis H3 posits that digitalization may alter firms’ responsiveness. Results in Table 18 show the interaction term (`did × digi1`) is significantly negative at the 5% level.  
+
+- Interpretation: Higher digitalization weakens the marginal impact of green finance, since highly digital firms already enjoy better transparency, efficiency, and financing access.  
+- Conclusion: Digitalization plays a **negative moderating role**. The policy is most effective for firms with low digitalization.  
+
+**Table 18. Moderation Analysis: Digitalization**  
+
+| VARIABLES     | (1) index | (2) index |
+|---------------|-----------|-----------|
+| did           | 0.007***  | 0.013***  |
+|               | (2.60)    | (3.36)    |
+| digi1         |           | 0.003***  |
+|               |           | (2.88)    |
+| c.did#c.digi1 |           | -0.003**  |
+|               |           | (-2.25)   |
+| lev           | -0.019*** | -0.019*** |
+|               | (-3.25)   | (-3.25)   |
+| ato           | 0.006**   | 0.007**   |
+|               | (2.06)    | (2.13)    |
+| cashflow      | 0.031***  | 0.031***  |
+|               | (2.71)    | (2.70)    |
+| inv           | 0.024**   | 0.024**   |
+|               | (2.06)    | (2.09)    |
+| growth        | -0.001    | -0.001    |
+|               | (-0.47)   | (-0.58)   |
+| board         | 0.001     | -0.000    |
+|               | (0.12)    | (-0.02)   |
+| indep         | 0.000     | 0.000     |
+|               | (0.35)    | (0.37)    |
+| firmage       | 0.008     | 0.008     |
+|               | (0.92)    | (0.90)    |
+| Constant      | 0.060*    | 0.059*    |
+|               | (1.85)    | (1.80)    |
+| Observations  | 11,909    | 11,909    |
+| R-squared     | 0.683     | 0.684     |
+
+**(b) Financing Constraints**  
+Hypothesis H4 suggests that financing constraints enhance the marginal benefit of green finance. Using the SA index as a proxy, results in Table 19 show the interaction term (`did × sa`) is significantly positive at the 1% level.  
+
+- Interpretation: For firms facing stronger financing constraints, the policy has a larger effect in facilitating green transformation.  
+- Conclusion: Financing constraints serve as a **positive moderator**, magnifying the policy’s impact where firms most need external support.  
+
+**Table 19. Moderation Analysis: Financing Constraints**  
+| VARIABLES     | (1) index | (2) index |
+|---------------|-----------|-----------|
+| did           | 0.007***  | 0.090***  |
+|               | (2.60)    | (3.09)    |
+| sa            |           | 0.067***  |
+|               |           | (7.08)    |
+| c.did#c.sa    |           | 0.021***  |
+|               |           | (2.90)    |
+| lev           | -0.019*** | -0.018*** |
+|               | (-3.25)   | (-3.12)   |
+| ato           | 0.006**   | 0.006*    |
+|               | (2.06)    | (1.78)    |
+| cashflow      | 0.031***  | 0.030***  |
+|               | (2.71)    | (2.61)    |
+| inv           | 0.024**   | 0.027**   |
+|               | (2.06)    | (2.32)    |
+| growth        | -0.001    | 0.000     |
+|               | (-0.47)   | (0.01)    |
+| board         | 0.001     | 0.002     |
+|               | (0.12)    | (0.33)    |
+| indep         | 0.000     | 0.000     |
+|               | (0.35)    | (0.32)    |
+| firmage       | 0.008     | 0.003     |
+|               | (0.92)    | (0.37)    |
+| Constant      | 0.060*    | 0.327***  |
+|               | (1.85)    | (6.99)    |
+| Observations  | 11,909    | 11,909    |
+| R-squared     | 0.683     | 0.686     |
+
+#### Summary of Mechanism  
+
+The mechanism analysis highlights two key findings:  
+1. **R&D investment fully mediates** the policy’s effect, providing a clear transmission channel.  
+2. **Digitalization weakens** the policy effect, while **financing constraints strengthen** it.  
+
