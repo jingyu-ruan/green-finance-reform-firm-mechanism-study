@@ -494,12 +494,189 @@ Table 11 shows that the policy variable (`did`) significantly improves both indi
 ---
 
 ## 🧩 Heterogeneity Analysis
+The baseline and robustness regressions confirm that the Green Finance Reform and Innovation Pilot Zone (GFRIPZ) policy promotes corporate green transformation on average. However, this average effect may mask differences across firms and contexts. To better understand the mechanism and scope of the policy’s impact, we conduct heterogeneity analysis along five dimensions: **policy batches, ownership, pollution intensity, life cycle stage, and geographic location**.  
 
-1. Policy Batch Heterogeneity  
-2. Ownership Heterogeneity  
-3. Pollution Intensity Heterogeneity  
-4. Firm Life Cycle  
-5. Regional Heterogeneity  
+1. Policy Batch Heterogeneity
+
+ Since the GFRIPZ policy was rolled out in multiple batches, differences in timing, macroeconomic conditions, and policy design may have led to varying impacts. Table 12 reports results across the first, second, and third batches.  
+
+- Column (1): The first batch (`did1`) shows a significant positive coefficient (0.007, 5% level).  
+- Column (2): The second batch (`did2`) shows a much larger positive effect (0.044, 5% level).  
+- Column (3): The full sample of three batches produces results consistent with the baseline.  
+
+These findings suggest a **“gradual and strengthening” policy effect**: later batches benefited from accumulated experience and more precise design, enhancing overall effectiveness.  
+
+**Table 12. Policy Batch Heterogeneity Regression Results**
+
+| VARIABLES   | (1) First Batch | (2) First + Second Batch | (3) First + Second + Third Batch |
+|-------------|-----------------|--------------------------|----------------------------------|
+| did1        | 0.007**         |                          |                                  |
+|             | (2.57)          |                          |                                  |
+| did2        |                 | 0.044**                  |                                  |
+|             |                 | (1.97)                   |                                  |
+| did         |                 |                          | 0.007***                         |
+|             |                 |                          | (2.60)                           |
+| lev         | -0.019***       | -0.020**                 | -0.019***                        |
+|             | (-3.25)         | (-2.48)                  | (-3.25)                          |
+| ato         | 0.007**         | 0.009*                   | 0.006**                          |
+|             | (2.06)          | (1.93)                   | (2.06)                           |
+| cashflow    | 0.031***        | 0.036**                  | 0.031***                         |
+|             | (2.72)          | (2.23)                   | (2.71)                           |
+| inv         | 0.024**         | 0.026                    | 0.024**                          |
+|             | (2.05)          | (1.62)                   | (2.06)                           |
+| growth      | -0.001          | -0.001                   | -0.001                           |
+|             | (-0.47)         | (-0.48)                  | (-0.47)                          |
+| board       | 0.001           | 0.002                    | 0.001                            |
+|             | (0.13)          | (0.21)                   | (0.12)                           |
+| indep       | 0.000           | 0.000                    | 0.000                            |
+|             | (0.36)          | (0.45)                   | (0.35)                           |
+| firmage     | 0.008           | 0.014                    | 0.008                            |
+|             | (0.91)          | (1.18)                   | (0.92)                           |
+| Constant    | 0.060*          | 0.037                    | 0.060*                           |
+|             | (1.86)          | (0.81)                   | (1.85)                           |
+| Observations| 11,909          | 11,909                   | 11,909                           |
+| R-squared   | 0.683           | 0.705                    | 0.683                            |
+
+2. Ownership Heterogeneity
+
+Firms with different ownership structures face distinct financing conditions and policy sensitivities. Private firms often encounter stronger credit constraints and respond more quickly to incentives, while state-owned enterprises (SOEs) — especially central SOEs — enjoy easier access to finance but may rely more on top-down directives.  
+
+- Private firms: `did` is positive and significant at 5%.  
+- Local SOEs: `did` is positive and significant at 10%.  
+- Central SOEs: coefficient positive but statistically insignificant.  
+
+This shows that the **policy effect is strongest for private firms**, consistent with their greater financing needs and responsiveness.  
+
+**Table 13. Ownership Heterogeneity Regression Results**  
+| VARIABLES   | (1) Private Enterprises | (2) Local SOEs | (3) Central SOEs |
+|-------------|-------------------------|----------------|------------------|
+| did         | 0.007**                 | 0.012*         | 0.017            |
+|             | (2.33)                  | (1.83)         | (1.42)           |
+| lev         | -0.018***               | 0.011          | -0.037           |
+|             | (-2.69)                 | (0.72)         | (-1.52)          |
+| ato         | 0.004                   | 0.001          | 0.017            |
+|             | (1.16)                  | (0.11)         | (1.64)           |
+| cashflow    | 0.044***                | 0.022          | -0.036           |
+|             | (3.31)                  | (0.84)         | (-0.86)          |
+| inv         | 0.037***                | -0.020         | 0.001            |
+|             | (2.75)                  | (-0.65)        | (0.02)           |
+| growth      | 0.000                   | -0.005         | -0.002           |
+|             | (0.15)                  | (-1.23)        | (-0.37)          |
+| board       | -0.005                  | -0.006         | 0.061**          |
+|             | (-0.63)                 | (-0.35)        | (2.09)           |
+| indep       | 0.000                   | -0.001         | 0.002**          |
+|             | (0.43)                  | (-1.63)        | (2.01)           |
+| firmage     | 0.027***                | 0.092***       | -0.086*          |
+|             | (2.81)                  | (3.41)         | (-1.74)          |
+| Constant    | 0.006                   | -0.134         | 0.194            |
+|             | (0.16)                  | (-1.38)        | (1.13)           |
+| Observations| 8,355                   | 2,598          | 865              |
+| R-squared   | 0.685                   | 0.711          | 0.775            |
+
+3. Pollution Intensity Heterogeneity
+We use carbon intensity (emissions per revenue) to classify firms into low-, medium-, and high-pollution groups.  
+
+- High-pollution firms: `did` is significantly positive at 5%, confirming strong policy support for costly green upgrades.  
+- Low-pollution firms: `did` positive and significant at 10%, but weaker.  
+- Medium-pollution firms: `did` significantly negative at 10%, possibly reflecting **short-term adjustment costs or transitional frictions**.  
+
+Overall, the policy has the **most powerful impact on highly polluting firms**, which face greater regulatory pressure and transformation needs.  
+
+**Table 14. Pollution Intensity Heterogeneity Regression Results**
+| VARIABLES   | (1) Low Carbon Intensity | (2) Medium Carbon Intensity | (3) High Carbon Intensity |
+|-------------|--------------------------|-----------------------------|---------------------------|
+| did         | 0.014*                   | -0.019*                     | 0.020**                   |
+|             | (1.75)                   | (-1.83)                     | (2.13)                    |
+| lev         | -0.015                   | -0.018                      | 0.005                     |
+|             | (-0.84)                  | (-0.77)                     | (0.25)                    |
+| ato         | 0.012                    | -0.002                      | 0.006                     |
+|             | (1.15)                   | (-0.17)                     | (0.48)                    |
+| cashflow    | 0.021                    | -0.002                      | 0.029                     |
+|             | (0.64)                   | (-0.05)                     | (0.71)                    |
+| inv         | 0.050                    | -0.058                      | 0.069                     |
+|             | (1.26)                   | (-1.11)                     | (1.47)                    |
+| growth      | -0.001                   | 0.005                       | -0.000                    |
+|             | (-0.22)                  | (0.74)                      | (-0.08)                   |
+| board       | 0.045**                  | 0.008                       | 0.006                     |
+|             | (2.12)                   | (0.29)                      | (0.27)                    |
+| indep       | 0.001*                   | 0.001                       | 0.000                     |
+|             | (1.82)                   | (0.84)                      | (0.46)                    |
+| firmage     | 0.005                    | 0.093***                    | 0.030                     |
+|             | (0.19)                   | (3.24)                      | (1.02)                    |
+| Constant    | -0.041                   | -0.189*                     | -0.042                    |
+|             | (-0.40)                  | (-1.72)                     | (-0.39)                   |
+| Observations| 2,587                    | 1,337                       | 1,239                     |
+| R-squared   | 0.781                    | 0.770                       | 0.787                     |
+
+7. Firm Life Cycle
+Firm responses to policy may differ across life cycle stages (growth, maturity, decline).  
+
+- Growth-stage firms: `did` highly positive (0.023, 1% level), showing strong responsiveness.  
+- Mature firms: no significant effect.  
+- Declining firms: no significant effect.  
+
+The results indicate that **growth-stage firms capture the largest policy benefits**, as they are more investment-driven and opportunity-seeking, while mature and declining firms show weaker incentives.  
+
+**Table 15. Life Cycle Heterogeneity Regression Results**
+| VARIABLES   | (1) Growth Stage | (2) Maturity Stage | (3) Decline Stage |
+|-------------|------------------|--------------------|-------------------|
+| did         | 0.023***         | -0.000             | -0.021            |
+|             | (5.22)           | (-0.10)            | (-1.21)           |
+| lev         | -0.029***        | -0.008             | -0.026            |
+|             | (-2.91)          | (-0.87)            | (-0.45)           |
+| ato         | 0.009*           | 0.001              | 0.011             |
+|             | (1.78)           | (0.27)             | (0.35)            |
+| cashflow    | 0.055***         | 0.022              | -0.015            |
+|             | (2.81)           | (1.30)             | (-0.26)           |
+| inv         | 0.026            | 0.025              | -0.007            |
+|             | (1.15)           | (1.57)             | (-0.09)           |
+| growth      | -0.003           | 0.004              | 0.006             |
+|             | (-1.19)          | (1.34)             | (0.21)            |
+| board       | -0.020*          | 0.009              | 0.014             |
+|             | (-1.66)          | (0.89)             | (0.22)            |
+| indep       | -0.000           | -0.000             | 0.002             |
+|             | (-1.33)          | (-0.09)            | (1.01)            |
+| firmage     | 0.004            | -0.029*            | -0.178            |
+|             | (0.29)           | (-1.70)            | (-0.76)           |
+| Constant    | 0.132**          | 0.159***           | 0.576             |
+|             | (2.54)           | (2.67)             | (0.75)            |
+| Observations| 5,059            | 5,792              | 319               |
+| R-squared   | 0.724            | 0.722              | 0.859             |
+
+
+9. Regional Heterogeneity
+China’s eastern, central, and western regions differ in market development, industrial structure, and regulatory enforcement.  
+
+- Eastern region: `did` significantly positive at 5%, indicating strong policy effectiveness.  
+- Central and western regions: coefficients positive but insignificant.  
+
+Thus, **policy effects concentrate in the eastern region**, where market mechanisms, institutions, and resources allow firms to better translate financial support into green actions.  
+
+**Table 16. Geographic Heterogeneity Regression Results**  
+| VARIABLES   | (1) Western Region | (2) Central Region | (3) Eastern Region |
+|-------------|--------------------|--------------------|--------------------|
+| did         | 0.011              | 0.017              | 0.007**            |
+|             | (1.34)             | (1.58)             | (2.25)             |
+| lev         | -0.025             | -0.007             | -0.020***          |
+|             | (-1.61)            | (-0.48)            | (-2.89)            |
+| ato         | 0.014              | -0.004             | 0.009**            |
+|             | (1.52)             | (-0.56)            | (2.32)             |
+| cashflow    | 0.052              | 0.041              | 0.026*             |
+|             | (1.55)             | (1.42)             | (1.95)             |
+| inv         | 0.090***           | -0.068**           | 0.031**            |
+|             | (2.69)             | (-2.06)            | (2.29)             |
+| growth      | -0.002             | 0.000              | -0.001             |
+|             | (-0.55)            | (0.05)             | (-0.57)            |
+| board       | 0.086***           | -0.003             | -0.012             |
+|             | (3.97)             | (-0.15)            | (-1.48)            |
+| indep       | 0.001**            | -0.001             | -0.000             |
+|             | (2.43)             | (-1.12)            | (-0.19)            |
+| firmage     | 0.044              | 0.011              | 0.004              |
+|             | (1.45)             | (0.45)             | (0.45)             |
+| Constant    | -0.277***          | 0.102              | 0.099***           |
+|             | (-2.60)            | (1.14)             | (2.65)             |
+| Observations| 1,392              | 1,999              | 8,518              |
+| R-squared   | 0.718              | 0.655              | 0.686              |
 
 ---
 
