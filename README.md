@@ -111,7 +111,6 @@ The **core dependent variable** is the *Green Transformation Index*. Following e
 **Table 1. Construction of the Green Transformation Index**
 
 | Dimension            | Sub-Indicator         | Definition                                                                 |
-|-|--|--|
 | Technological Innovation | Green innovation output | Annual number of green patent applications filed by the firm                |
 | Production Level     | Total factor productivity | Firm-level TFP estimated via the LP method                                  |
 |                      | Labor productivity    | Ratio of total revenue to number of employees                               |
@@ -134,7 +133,6 @@ To minimize omitted variable bias, a set of firm-level controls is included.
 **Table 2. Control Variables**
 
 | Variable Name        | Symbol    | Definition                                                                 |
-|-|--|--|
 | Leverage ratio       | lev       | Total liabilities / total assets                                           |
 | Asset turnover       | ato       | Operating revenue / average total assets                                   |
 | Cash flow ratio      | cashflow  | Net cash flow from operations / total assets                               |
@@ -230,7 +228,6 @@ We next estimate the baseline multi-period DID model to test Hypothesis H1:
 **Table 6. Benchmark Regression Results**  
 
 | VARIABLES | (1) index | (2) index | (3) index |
-|--|--|--|--|
 | did       | 0.006**   | 0.015***  | 0.007***  |
 |           | (2.37)    | (5.83)    | (2.60)    |
 | lev       |           | -0.020*** | -0.019*** |
@@ -274,7 +271,6 @@ Table 7 reports the regression results when the policy variable is lagged by one
 **Table 7. Regression Results with One-period Lag of Core Explanatory Variable**
 
 | VARIABLES | (1) index | (2) index |
-|--|--|--|
 | L.did     | 0.006**   | 0.006**   |
 |           | (1.96)    | (1.97)    |
 | lev       |           | -0.019*** |
@@ -310,7 +306,6 @@ Table 8 shows regression results with province- and city-level fixed effects. Th
 **Table 8. Regression Results with Additional Regional Fixed Effects**
 
 | VARIABLES | (1) index | (2) index | (3) index | (4) index |
-|--|--|--|--|--|
 | did       | 0.008***  | 0.008***  | 0.008***  | 0.008***  |
 |           | (2.78)    | (2.80)    | (2.96)    | (3.01)    |
 | lev       |           |           | -0.016*** | -0.019*** |
@@ -385,7 +380,6 @@ Table 9 reports consistent positive and significant coefficients of `did` across
 **Table 9. PSM-DID Regression Results**
 
 | VARIABLES   | (1) 1:3 Nearest Neighbor Matching | (2) Radius Caliper Matching | (3) Kernel Matching |
-|-|-|--|-|
 | did         | 0.007**                          | 0.006*                      | 0.005*              |
 |             | (2.13)                           | (1.82)                      | (1.81)              |
 | lev         | -0.016**                         | -0.020***                   | -0.021***           |
@@ -418,7 +412,6 @@ Table 10 incorporates concurrent regional policies such as Low-Carbon City pilot
 **Table 10. Regression Results after Excluding Other Policy Effects**
 
 | VARIABLES   | (1) Low-Carbon Pilot | (2) Low-Carbon Pilot | (3) ETS Pilot | (4) ETS Pilot | (5) Smart-City Pilot | (6) Smart-City Pilot | (7) All Policies | (8) All Policies |
-|-|-|-|||--|-|||
 | did         | 0.006**              | 0.007***             | 0.007***      | 0.008***      | 0.006**               | 0.007**              | 0.008***         | 0.008***         |
 |             | (2.40)               | (2.62)               | (2.70)        | (2.92)        | (2.34)                | (2.57)               | (2.73)           | (2.96)           |
 | didcarbon   | 0.001                | 0.001                |               |               | 0.002                 | 0.002                |                  |                  |
@@ -462,7 +455,6 @@ Table 11 shows that the policy variable (`did`) significantly improves both indi
 **Table 11. Regression Results after Replacing Dependent Variables**
 
 | VARIABLES   | (1) cperf | (2) cperf | (3) epi | (4) epi |
-|-|--|--|||
 | did         | 0.055***  | 0.054***  | 0.116** | 0.111** |
 |             | (2.69)    | (2.59)    | (2.09)  | (2.01)  |
 | lev         |           | 0.171***  |         | 0.425***|
@@ -506,7 +498,6 @@ These findings suggest a **“gradual and strengthening” policy effect**: late
 **Table 12. Policy Batch Heterogeneity Regression Results**
 
 | VARIABLES   | (1) First Batch | (2) First + Second Batch | (3) First + Second + Third Batch |
-|-|--|--|-|
 | did1        | 0.007**         |                          |                                  |
 |             | (2.57)          |                          |                                  |
 | did2        |                 | 0.044**                  |                                  |
@@ -546,7 +537,6 @@ This shows that the **policy effect is strongest for private firms**, consistent
 
 **Table 13. Ownership Heterogeneity Regression Results**  
 | VARIABLES   | (1) Private Enterprises | (2) Local SOEs | (3) Central SOEs |
-|-|-|-||
 | did         | 0.007**                 | 0.012*         | 0.017            |
 |             | (2.33)                  | (1.83)         | (1.42)           |
 | lev         | -0.018***               | 0.011          | -0.037           |
@@ -581,7 +571,6 @@ Overall, the policy has the **most powerful impact on highly polluting firms**, 
 
 **Table 14. Pollution Intensity Heterogeneity Regression Results**
 | VARIABLES   | (1) Low Carbon Intensity | (2) Medium Carbon Intensity | (3) High Carbon Intensity |
-|-|--|--||
 | did         | 0.014*                   | -0.019*                     | 0.020**                   |
 |             | (1.75)                   | (-1.83)                     | (2.13)                    |
 | lev         | -0.015                   | -0.018                      | 0.005                     |
@@ -616,7 +605,6 @@ The results indicate that **growth-stage firms capture the largest policy benefi
 
 **Table 15. Life Cycle Heterogeneity Regression Results**
 | VARIABLES   | (1) Growth Stage | (2) Maturity Stage | (3) Decline Stage |
-|-||--|-|
 | did         | 0.023***         | -0.000             | -0.021            |
 |             | (5.22)           | (-0.10)            | (-1.21)           |
 | lev         | -0.029***        | -0.008             | -0.026            |
@@ -651,7 +639,6 @@ Thus, **policy effects concentrate in the eastern region**, where market mechani
 
 **Table 16. Geographic Heterogeneity Regression Results**  
 | VARIABLES   | (1) Western Region | (2) Central Region | (3) Eastern Region |
-|-|--|--|--|
 | did         | 0.011              | 0.017              | 0.007**            |
 |             | (1.34)             | (1.58)             | (2.25)             |
 | lev         | -0.025             | -0.007             | -0.020***          |
@@ -693,7 +680,6 @@ These results confirm a **full mediation effect**: the policy promotes green tra
 
 **Table 17. Mediation Analysis: R&D Investment** 
 | VARIABLES   | (1) index | (2) lnrd | (3) index |
-|-|--|-|--|
 | lnrd        |           |          | 0.001***  |
 |             |           |          | (2.82)    |
 | did         | 0.007***  | 0.372**  | 0.007     |
@@ -732,7 +718,6 @@ Hypothesis H3 posits that digitalization may alter firms’ responsiveness. Resu
 **Table 18. Moderation Analysis: Digitalization**  
 
 | VARIABLES     | (1) index | (2) index |
-||--|--|
 | did           | 0.007***  | 0.013***  |
 |               | (2.60)    | (3.36)    |
 | digi1         |           | 0.003***  |
@@ -768,7 +753,6 @@ Hypothesis H4 suggests that financing constraints enhance the marginal benefit o
 
 **Table 19. Moderation Analysis: Financing Constraints**  
 | VARIABLES     | (1) index | (2) index |
-||--|--|
 | did           | 0.007***  | 0.090***  |
 |               | (2.60)    | (3.09)    |
 | sa            |           | 0.067***  |
