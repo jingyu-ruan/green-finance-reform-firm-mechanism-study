@@ -387,7 +387,8 @@ The placebo estimates are centered around zero and insignificant, while the true
 
 To mitigate sample selection bias, PSM-DID is applied with three matching strategies (1:3 nearest neighbor, caliper, and kernel matching).  
 
-![PSM-DID Matching Graph](output/figures/近邻匹配psgraph.svg)  
+![PSM-DID Matching Graph](output/figures/近邻匹配psgraph.svg) 
+**Figure 4. Distribution of Propensity Scores for Treated and Untreated Groups**  
 
 Table 9 reports consistent positive and significant coefficients of `did` across all matching methods, further confirming the policy’s effect.  
 
