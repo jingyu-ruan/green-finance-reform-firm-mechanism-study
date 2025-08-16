@@ -153,7 +153,8 @@ Pearson correlation analysis is conducted to evaluate linear relationships among
 | indep  |       |       |       |       |          |       |        |        | 1      | 0.04*** |
 | firmage|       |       |       |       |          |       |        |        |        | 1       |
 
-*Notes: *, **, *** denote significance at the 10%, 5%, and 1% levels, respectively.*  
+*Notes: \*, \*\*, \*\*\* denote significance at the 10%, 5%, and 1% levels, respectively.*
+
 
 
 ### 4.3 Multicollinearity Analysis  
@@ -202,7 +203,8 @@ We next estimate the baseline multi-period DID model to test Hypothesis H1:
 | Obs.      | 22,877           | 22,877              | 22,877           |
 | R-squared | 0.683            | 0.659               | 0.683            |
 
-*Notes: Robust t-statistics in parentheses. *, **, *** denote significance at the 10%, 5%, and 1% levels, respectively.*  
+*Notes: Robust t-statistics in parentheses. \*, \*\*, \*\*\* denote significance at the 10%, 5%, and 1% levels, respectively.*
+
 
 
 ---
