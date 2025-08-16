@@ -160,14 +160,13 @@ To minimize omitted variable bias, a set of firm-level controls is included.
 
 This chapter constitutes the empirical core of the study, testing the effect of the Green Finance Reform and Innovation Pilot Zone policy on corporate green transformation using econometric models. The analysis begins with descriptive statistics, followed by correlation and multicollinearity checks. Then, benchmark regressions are conducted, accompanied by robustness tests to ensure the reliability of findings. Finally, heterogeneity and mechanism analyses are carried out to explore the pathways and conditions under which the policy operates.  
 
-### 4.1 Descriptive Statistics  
+### 1. Descriptive Statistics  
 
 Before conducting regressions, we summarize the main variables to understand their distributional characteristics.  
 
 **Table 3. Descriptive Statistics of Main Variables**  
 
 | Variable   | Obs   | Mean  | SD    | Min   | Median | Max   |
-||-|-|-|-|--|-|
 | index      | 22877 | 0.088 | 0.105 | 0.000 | 0.053  | 0.628 |
 | did        | 22877 | 0.211 | 0.408 | 0.000 | 0.000  | 1.000 |
 | lev        | 21877 | 0.417 | 0.208 | 0.051 | 0.405  | 0.950 |
@@ -180,14 +179,13 @@ Before conducting regressions, we summarize the main variables to understand the
 | firmage    | 21877 | 2.894 | 0.366 | 1.099 | 2.944  | 4.043 |
 
 
-### 4.2 Correlation Analysis  
+### 2. Correlation Analysis  
 
 Pearson correlation analysis is conducted to evaluate linear relationships among variables and detect potential multicollinearity.  
 
 **Table 4. Correlation Matrix**  
 
 |        | index | did   | lev   | ato   | cashflow | inv   | growth | board | indep | firmage |
-|--|-|-|-|-|-|-|--|-|-||
 | index  | 1     | 0.12*** | 0.10*** | 0.10*** | 0.14*** | -0.03***| -0.04***| 0.10***| -0.02***| 0.21*** |
 | did    |       | 1     | 0.06*** | 0.01** | 0.03*** | -0.03***| -0.04***| -0.08***| 0.04*** | 0.21*** |
 | lev    |       |       | 1     | 0.16***| -0.17***| 0.26***| 0.01** | 0.11***| -0.02** | 0.17*** |
@@ -203,14 +201,13 @@ Pearson correlation analysis is conducted to evaluate linear relationships among
 
 
 
-### 4.3 Multicollinearity Analysis  
+### 3. Multicollinearity Analysis  
 
 Variance Inflation Factor (VIF) tests further ensure that no severe multicollinearity exists among independent variables.  
 
 **Table 5. VIF Test Results**  
 
 | Variable | VIF  | 1/VIF |
-|-||-|
 | board    | 1.54 | 0.651 |
 | indep    | 1.51 | 0.664 |
 | lev      | 1.18 | 0.846 |
@@ -225,7 +222,7 @@ Variance Inflation Factor (VIF) tests further ensure that no severe multicolline
 All VIF values are well below the common threshold of 10, confirming that multicollinearity is not a concern.  
 
 
-### 4.4 Benchmark Regression Analysis  
+### 4. Benchmark Regression Analysis  
 
 We next estimate the baseline multi-period DID model to test Hypothesis H1:  
 *“The Green Finance Reform and Innovation Pilot Zone policy promotes corporate green transformation.”*  
@@ -270,7 +267,7 @@ We next estimate the baseline multi-period DID model to test Hypothesis H1:
 
 To ensure the reliability of the baseline regression results, this section conducts a series of robustness checks, including lagging the core explanatory variable, adding regional fixed effects, parallel trend tests, placebo tests, applying PSM-DID, excluding other concurrent policies, and replacing the dependent variable.  
 
-### 4.4.1 Lagging the Core Explanatory Variable  
+### 1. Lagging the Core Explanatory Variable  
 
 Table 7 reports the regression results when the policy variable is lagged by one period. The coefficient of `L.did` remains significantly positive at the 5% level, confirming the persistence and robustness of the policy effect.  
 
@@ -306,7 +303,7 @@ Table 7 reports the regression results when the policy variable is lagged by one
 
 
 
-### 4.4.2 Adding Regional Fixed Effects  
+### 2. Adding Regional Fixed Effects  
 
 Table 8 shows regression results with province- and city-level fixed effects. The coefficient of `did` remains 0.008 and highly significant at the 1% level across specifications, confirming robustness against regional unobservables.  
 
@@ -341,7 +338,7 @@ Table 8 shows regression results with province- and city-level fixed effects. Th
 | Observations | 22,877 | 11,868    | 22,877    | 11,868    |
 | R-squared | 0.685     | 0.691     | 0.686     | 0.692     |
 
-### 4.4.3 Parallel Trend Test  
+### 3. Parallel Trend Test  
 
 A key prerequisite for the Difference-in-Differences (DID) model is the **parallel trend assumption**, which requires that the treatment group and the control group follow a similar trend before the policy intervention. If this assumption does not hold, the post-policy differences in firms’ green transition outcomes may simply reflect inherent trend differences rather than the true policy effect.  
 
@@ -361,7 +358,7 @@ The figure below plots the estimated coefficients for $k \in [-5, +5]$:
 The coefficients before policy implementation are statistically indistinguishable from zero, validating the parallel trend assumption. Post-policy coefficients turn significantly positive, indicating that the effect emerges gradually after the policy intervention.  
 
 
-### 4.4.4 Placebo Test  
+### 4. Placebo Test  
 
 To rule out spurious correlations, a placebo test is conducted by randomly assigning firms to treatment groups 500 times.  
 
@@ -377,7 +374,7 @@ The placebo estimates are centered around zero and insignificant, while the true
 
 
 
-### 4.4.5 PSM-DID  
+### 5. PSM-DID  
 
 To mitigate sample selection bias, PSM-DID is applied with three matching strategies (1:3 nearest neighbor, caliper, and kernel matching).  
 
@@ -414,7 +411,7 @@ Table 9 reports consistent positive and significant coefficients of `did` across
 
 
 
-### 4.4.6 Excluding Other Concurrent Policies  
+### 6. Excluding Other Concurrent Policies  
 
 Table 10 incorporates concurrent regional policies such as Low-Carbon City pilots, ETS pilots, and Smart City pilots as controls. The coefficient of `did` remains positive and significant, indicating the effect is independent of these policies.  
 
@@ -453,7 +450,7 @@ Table 10 incorporates concurrent regional policies such as Low-Carbon City pilot
 
 
 
-### 4.4.7 Alternative Dependent Variables  
+### 7. Alternative Dependent Variables  
 
 To ensure robustness, we replace the main dependent variable with two alternative measures of green transformation:  
 
@@ -496,7 +493,7 @@ Table 11 shows that the policy variable (`did`) significantly improves both indi
 ## 🧩 Heterogeneity Analysis
 The baseline and robustness regressions confirm that the Green Finance Reform and Innovation Pilot Zone (GFRIPZ) policy promotes corporate green transformation on average. However, this average effect may mask differences across firms and contexts. To better understand the mechanism and scope of the policy’s impact, we conduct heterogeneity analysis along five dimensions: **policy batches, ownership, pollution intensity, life cycle stage, and geographic location**.  
 
-1. Policy Batch Heterogeneity
+### 1. Policy Batch Heterogeneity
 
  Since the GFRIPZ policy was rolled out in multiple batches, differences in timing, macroeconomic conditions, and policy design may have led to varying impacts. Table 12 reports results across the first, second, and third batches.  
 
@@ -537,7 +534,7 @@ These findings suggest a **“gradual and strengthening” policy effect**: late
 | Observations| 11,909          | 11,909                   | 11,909                           |
 | R-squared   | 0.683           | 0.705                    | 0.683                            |
 
-2. Ownership Heterogeneity
+### 2. Ownership Heterogeneity
 
 Firms with different ownership structures face distinct financing conditions and policy sensitivities. Private firms often encounter stronger credit constraints and respond more quickly to incentives, while state-owned enterprises (SOEs) — especially central SOEs — enjoy easier access to finance but may rely more on top-down directives.  
 
@@ -573,7 +570,7 @@ This shows that the **policy effect is strongest for private firms**, consistent
 | Observations| 8,355                   | 2,598          | 865              |
 | R-squared   | 0.685                   | 0.711          | 0.775            |
 
-3. Pollution Intensity Heterogeneity
+### 3. Pollution Intensity Heterogeneity
 We use carbon intensity (emissions per revenue) to classify firms into low-, medium-, and high-pollution groups.  
 
 - High-pollution firms: `did` is significantly positive at 5%, confirming strong policy support for costly green upgrades.  
@@ -608,7 +605,7 @@ Overall, the policy has the **most powerful impact on highly polluting firms**, 
 | Observations| 2,587                    | 1,337                       | 1,239                     |
 | R-squared   | 0.781                    | 0.770                       | 0.787                     |
 
-7. Firm Life Cycle
+### 4. Firm Life Cycle
 Firm responses to policy may differ across life cycle stages (growth, maturity, decline).  
 
 - Growth-stage firms: `did` highly positive (0.023, 1% level), showing strong responsiveness.  
@@ -644,7 +641,7 @@ The results indicate that **growth-stage firms capture the largest policy benefi
 | R-squared   | 0.724            | 0.722              | 0.859             |
 
 
-9. Regional Heterogeneity
+### 5. Regional Heterogeneity
 China’s eastern, central, and western regions differ in market development, industrial structure, and regulatory enforcement.  
 
 - Eastern region: `did` significantly positive at 5%, indicating strong policy effectiveness.  
@@ -682,7 +679,7 @@ Thus, **policy effects concentrate in the eastern region**, where market mechani
 
 ## 🔗 Mechanism Analysis
 
-1. Mediation Effect: R&D Investment
+### 1. Mediation Effect: R&D Investment
 
 The previous regressions confirm that the GFRIPZ policy significantly promotes corporate green transformation. This section explores **how** the policy works by testing two channels: (i) a **mediating effect** through R&D investment, and (ii) **moderating effects** of digitalization and financing constraints.  
 
@@ -722,11 +719,11 @@ These results confirm a **full mediation effect**: the policy promotes green tra
 | Observations| 11,909    | 11,909   | 11,909    |
 | R-squared   | 0.683     | 0.766    | 0.684     |
 
-2. Moderation Effect: Digitalization and Financing Constraints  
+### 2. Moderation Effect: Digitalization and Financing Constraints  
 
 We next examine whether firm characteristics affect the strength of the policy impact, focusing on **digitalization** and **financing constraints**.  
 
-**(a) Digitalization**  
+#### (a) Digitalization
 Hypothesis H3 posits that digitalization may alter firms’ responsiveness. Results in Table 18 show the interaction term (`did × digi1`) is significantly negative at the 5% level.  
 
 - Interpretation: Higher digitalization weakens the marginal impact of green finance, since highly digital firms already enjoy better transparency, efficiency, and financing access.  
@@ -763,7 +760,7 @@ Hypothesis H3 posits that digitalization may alter firms’ responsiveness. Resu
 | Observations  | 11,909    | 11,909    |
 | R-squared     | 0.683     | 0.684     |
 
-**(b) Financing Constraints**  
+#### (b) Financing Constraints
 Hypothesis H4 suggests that financing constraints enhance the marginal benefit of green finance. Using the SA index as a proxy, results in Table 19 show the interaction term (`did × sa`) is significantly positive at the 1% level.  
 
 - Interpretation: For firms facing stronger financing constraints, the policy has a larger effect in facilitating green transformation.  
@@ -799,7 +796,7 @@ Hypothesis H4 suggests that financing constraints enhance the marginal benefit o
 | Observations  | 11,909    | 11,909    |
 | R-squared     | 0.683     | 0.686     |
 
-#### Summary of Mechanism  
+### 3. Summary of Mechanism  
 
 The mechanism analysis highlights two key findings:  
 1. **R&D investment fully mediates** the policy’s effect, providing a clear transmission channel.  
