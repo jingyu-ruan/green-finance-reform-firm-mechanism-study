@@ -240,7 +240,6 @@ Table 7 reports the regression results when the policy variable is lagged by one
 |           |           | (1.40)    |
 | Constant  | 0.090***  | -0.008    |
 |           | (111.14)  | (-0.20)   |
-|           |           |           |
 | Time FE   | YES       | YES       |
 | Firm FE   | YES       | YES       |
 | Observations | 19,862 | 19,862    |
