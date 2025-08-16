@@ -101,8 +101,56 @@ Where $Mod_{it}$ is the moderator. The key parameter is $\beta_3$:
 - If $\beta_3 < 0$ and significant, the moderator weakens the policy effect.  
 
 ### 2. Variable Selection and Data Sources
-1. Variable Selection  
-2. Data Sources  
+
+#### 2.1 Variable Selection
+
+The research sample consists of Chinese A-share listed firms from 2009 to 2023.  
+
+The **core dependent variable** is the *Green Transformation Index*. Following existing studies, green transformation is considered a multidimensional concept that cannot be captured by a single measure. Therefore, a composite index is constructed from five dimensions—technological innovation, production efficiency, pollution reduction, environmental protection, and social evaluation—using the entropy weight method.  
+
+**Table 1. Construction of the Green Transformation Index**
+
+| Dimension            | Sub-Indicator         | Definition                                                                 |
+|----------------------|-----------------------|-----------------------------------------------------------------------------|
+| Technological Innovation | Green innovation output | Annual number of green patent applications filed by the firm                |
+| Production Level     | Total factor productivity | Firm-level TFP estimated via the LP method                                  |
+|                      | Labor productivity    | Ratio of total revenue to number of employees                               |
+| Pollution Reduction  | Pollution treatment   | Disclosure on wastewater, waste gas, and solid waste management             |
+|                      | Clean production      | Disclosure on clean production facilities                                   |
+| Environmental Protection | Environmental management | Disclosure on environmental information, management systems, emergency mechanisms, and “Three Simultaneous”制度 |
+|                      | Environmental supervision | Inclusion in key pollution monitoring list, environmental accidents, violations, complaints, ISO certification |
+| Social Evaluation    | ESG rating            | Huazheng ESG rating scores (mapped from 9 = highest to 1 = lowest)          |
+
+The **core explanatory variable** is the *policy dummy* of the Green Finance Reform and Innovation Pilot Zone, defined as the interaction between the treatment group dummy and the policy implementation time dummy.  
+
+The **mediating variable** is *R&D investment*, reflecting whether the policy promotes green transformation by incentivizing long-term innovation.  
+
+The **moderating variables** are:  
+- *Digitalization level*: capturing firms’ internal information processing and resource allocation capabilities.  
+- *Financing constraints*: measured using the SA index, reflecting the extent of financial frictions faced by firms.  
+
+To minimize omitted variable bias, a set of firm-level controls is included.  
+
+**Table 2. Control Variables**
+
+| Variable Name        | Symbol    | Definition                                                                 |
+|----------------------|-----------|-----------------------------------------------------------------------------|
+| Leverage ratio       | lev       | Total liabilities / total assets                                           |
+| Asset turnover       | ato       | Operating revenue / average total assets                                   |
+| Cash flow ratio      | cashflow  | Net cash flow from operations / total assets                               |
+| Inventory ratio      | inv       | Inventory / total assets                                                   |
+| Revenue growth       | growth    | Current year revenue / previous year revenue − 1                           |
+| Board size           | board     | Natural log of board members                                               |
+| Independent director ratio | indep | Number of independent directors / total directors                         |
+| Firm age             | firmage   | Natural log of (current year − founding year + 1)                          |
+
+#### 2.2 Data Sources
+
+- **Green patent applications**: CNRDS and National Intellectual Property Administration (NIPA)  
+- **ESG ratings**: Huazheng ESG Rating System  
+- **Annual reports**: used for digitalization, pollution reduction, and environmental protection indicators  
+- **Financial and governance data**: CSMAR and Wind databases  
+- **Interpolation**: applied to fill missing values where appropriate  
 
 ---
 
