@@ -216,14 +216,36 @@ To ensure the reliability of the baseline regression results, this section condu
 
 Table 7 reports the regression results when the policy variable is lagged by one period. The coefficient of `L.did` remains significantly positive at the 5% level, confirming the persistence and robustness of the policy effect.  
 
-| VARIABLES | index (1) | index (2) |
+**Table 7. Regression results with one-period lag of core explanatory variable**
+
+| VARIABLES | (1) index | (2) index |
 |-----------|-----------|-----------|
-| L.did     | 0.006** (1.96) | 0.006** (1.97) |
-| lev       |           | -0.019*** (-3.15) |
-| ato       |           | 0.006* (1.80) |
-| ...       | ...       | ... |
-| Observations | 19,862 | 19,862 |
-| R-squared | 0.689 | 0.699 |
+| L.did     | 0.006**   | 0.006**   |
+|           | (1.96)    | (1.97)    |
+| lev       |           | -0.019*** |
+|           |           | (-3.15)   |
+| ato       |           | 0.006*    |
+|           |           | (1.80)    |
+| cashflow  |           | 0.018     |
+|           |           | (1.48)    |
+| inv       |           | 0.030**   |
+|           |           | (2.44)    |
+| growth    |           | 0.002     |
+|           |           | (0.97)    |
+| board     |           | 0.017**   |
+|           |           | (2.36)    |
+| indep     |           | 0.000**   |
+|           |           | (2.17)    |
+| firmage   |           | 0.015     |
+|           |           | (1.40)    |
+| Constant  | 0.090***  | -0.008    |
+|           | (111.14)  | (-0.20)   |
+|           |           |           |
+| Time FE   | YES       | YES       |
+| Firm FE   | YES       | YES       |
+| Observations | 19,862 | 19,862    |
+| R-squared | 0.689     | 0.699     |
+
 
 
 
