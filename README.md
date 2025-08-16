@@ -112,8 +112,6 @@ Where $Mod_{it}$ is the moderator. The key parameter is $\beta_3$:
 
 This chapter constitutes the empirical core of the study, testing the effect of the Green Finance Reform and Innovation Pilot Zone policy on corporate green transformation using econometric models. The analysis begins with descriptive statistics, followed by correlation and multicollinearity checks. Then, benchmark regressions are conducted, accompanied by robustness tests to ensure the reliability of findings. Finally, heterogeneity and mechanism analyses are carried out to explore the pathways and conditions under which the policy operates.  
 
----
-
 ### 4.1 Descriptive Statistics  
 
 Before conducting regressions, we summarize the main variables to understand their distributional characteristics.  
@@ -211,7 +209,6 @@ We next estimate the baseline multi-period DID model to test Hypothesis H1:
 
 ## 🔍 Robustness Checks
 
-## 4.4 Robustness Tests  
 
 To ensure the reliability of the baseline regression results, this section conducts a series of robustness checks, including lagging the core explanatory variable, adding regional fixed effects, parallel trend tests, placebo tests, applying PSM-DID, excluding other concurrent policies, and replacing the dependent variable.  
 
@@ -244,7 +241,6 @@ A necessary condition for the DID approach is the parallel trend assumption. Fig
 
 The coefficients before policy implementation are statistically indistinguishable from zero, validating the parallel trend assumption. Post-policy coefficients turn significantly positive, indicating that the effect emerges gradually after the policy intervention.  
 
----
 
 ### 4.4.4 Placebo Test  
 
