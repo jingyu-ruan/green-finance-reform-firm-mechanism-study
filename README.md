@@ -1,4 +1,4 @@
-# 🌱 Green Finance Reform and Corporate Green Transformation
+# 🌱 Green Finance Pilot Policies and Corporate Green Transformation: Evidence from Chinese Listed Firms
 
 This repository contains the empirical analysis for evaluating the policy impact of **China's Green Finance Reform and Innovation Pilot Zones** on corporate green transformation. The project applies econometric methods (multi-period DID, mediation, moderation) using firm-level panel data.
 
