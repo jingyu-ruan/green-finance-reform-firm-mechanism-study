@@ -226,7 +226,7 @@ To ensure the reliability of the baseline regression results, this section condu
 
 Table 7 reports the regression results when the policy variable is lagged by one period. The coefficient of `L.did` remains significantly positive at the 5% level, confirming the persistence and robustness of the policy effect.  
 
-**Table 7. Regression results with one-period lag of core explanatory variable**
+**Table 7. Regression Results with One-period Lag of Core Explanatory Variable**
 
 | VARIABLES | (1) index | (2) index |
 |-----------|-----------|-----------|
@@ -262,7 +262,36 @@ Table 7 reports the regression results when the policy variable is lagged by one
 
 Table 8 shows regression results with province- and city-level fixed effects. The coefficient of `did` remains 0.008 and highly significant at the 1% level across specifications, confirming robustness against regional unobservables.  
 
+**Table 8. Regression Results with Additional Regional Fixed Effects**
 
+| VARIABLES | (1) index | (2) index | (3) index | (4) index |
+|-----------|-----------|-----------|-----------|-----------|
+| did       | 0.008***  | 0.008***  | 0.008***  | 0.008***  |
+|           | (2.78)    | (2.80)    | (2.96)    | (3.01)    |
+| lev       |           |           | -0.016*** | -0.019*** |
+|           |           |           | (-2.79)   | (-3.24)   |
+| ato       |           |           | 0.007**   | 0.008**   |
+|           |           |           | (2.13)    | (2.39)    |
+| cashflow  |           |           | 0.030***  | 0.027**   |
+|           |           |           | (2.60)    | (2.38)    |
+| inv       |           |           | 0.022*    | 0.027**   |
+|           |           |           | (1.89)    | (2.32)    |
+| growth    |           |           | -0.001    | -0.001    |
+|           |           |           | (-0.39)   | (-0.56)   |
+| board     |           |           | -0.001    | -0.001    |
+|           |           |           | (-0.12)   | (-0.14)   |
+| indep     |           |           | 0.000     | 0.000     |
+|           |           |           | (0.21)    | (0.44)    |
+| firmage   |           |           | 0.008     | 0.005     |
+|           |           |           | (0.93)    | (0.57)    |
+| Constant  |           |           | 0.064**   | 0.071**   |
+|           |           |           | (1.96)    | (2.18)    |
+| Time FE   | YES       | YES       | YES       | YES       |
+| Firm FE   | YES       | YES       | YES       | YES       |
+| Province FE | NO      | YES       | NO        | YES       |
+| City FE   | YES       | YES       | YES       | YES       |
+| Observations | 22,877 | 11,868    | 22,877    | 11,868    |
+| R-squared | 0.685     | 0.691     | 0.686     | 0.692     |
 
 ### 4.4.3 Parallel Trend Test  
 
