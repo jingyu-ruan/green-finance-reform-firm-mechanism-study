@@ -346,6 +346,7 @@ Table 8 shows regression results with province- and city-level fixed effects. Th
 A necessary condition for the DID approach is the parallel trend assumption. Figure 1 plots the event-study results.  
 
 ![Parallel Trend Test](output/figures/平行趋势检验.svg)  
+**Figure 1. Parallel Trend Test**
 
 The coefficients before policy implementation are statistically indistinguishable from zero, validating the parallel trend assumption. Post-policy coefficients turn significantly positive, indicating that the effect emerges gradually after the policy intervention.  
 
