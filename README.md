@@ -117,7 +117,7 @@ The **core dependent variable** is the *Green Transformation Index*. Following e
 |                      | Labor productivity    | Ratio of total revenue to number of employees                               |
 | Pollution Reduction  | Pollution treatment   | Disclosure on wastewater, waste gas, and solid waste management             |
 |                      | Clean production      | Disclosure on clean production facilities                                   |
-| Environmental Protection | Environmental management | Disclosure on environmental information, management systems, emergency mechanisms, and “Three Simultaneous”制度 |
+| Environmental Protection | Environmental management | Disclosure on environmental information, management systems, emergency mechanisms, and the Three Simultaneous System (design, construction, and operation of environmental protection facilities simultaneously with the main project)  |
 |                      | Environmental supervision | Inclusion in key pollution monitoring list, environmental accidents, violations, complaints, ISO certification |
 | Social Evaluation    | ESG rating            | Huazheng ESG rating scores (mapped from 9 = highest to 1 = lowest)          |
 
