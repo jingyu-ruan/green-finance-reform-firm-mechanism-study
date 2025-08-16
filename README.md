@@ -108,7 +108,7 @@ Where $Mod_{it}$ is the moderator. The key parameter is $\beta_3$:
 
 ## 📊 Empirical Results and Analysis
 
-## 4. Empirical Results and Analysis  
+
 
 This chapter constitutes the empirical core of the study, testing the effect of the Green Finance Reform and Innovation Pilot Zone policy on corporate green transformation using econometric models. The analysis begins with descriptive statistics, followed by correlation and multicollinearity checks. Then, benchmark regressions are conducted, accompanied by robustness tests to ensure the reliability of findings. Finally, heterogeneity and mechanism analyses are carried out to explore the pathways and conditions under which the policy operates.  
 
@@ -211,13 +211,76 @@ We next estimate the baseline multi-period DID model to test Hypothesis H1:
 
 ## 🔍 Robustness Checks
 
-1. Lagged Policy Variable  
-2. Adding Regional Fixed Effects  
-3. Parallel Trend Test  
-4. Placebo Test  
-5. PSM-DID  
-6. Controlling for Other Policies  
-7. Alternative Dependent Variables  
+## 4.4 Robustness Tests  
+
+To ensure the reliability of the baseline regression results, this section conducts a series of robustness checks, including lagging the core explanatory variable, adding regional fixed effects, parallel trend tests, placebo tests, applying PSM-DID, excluding other concurrent policies, and replacing the dependent variable.  
+
+### 4.4.1 Lagging the Core Explanatory Variable  
+
+Table 7 reports the regression results when the policy variable is lagged by one period. The coefficient of `L.did` remains significantly positive at the 5% level, confirming the persistence and robustness of the policy effect.  
+
+| VARIABLES | index (1) | index (2) |
+|-----------|-----------|-----------|
+| L.did     | 0.006** (1.96) | 0.006** (1.97) |
+| lev       |           | -0.019*** (-3.15) |
+| ato       |           | 0.006* (1.80) |
+| ...       | ...       | ... |
+| Observations | 19,862 | 19,862 |
+| R-squared | 0.689 | 0.699 |
+
+
+
+### 4.4.2 Adding Regional Fixed Effects  
+
+Table 8 shows regression results with province- and city-level fixed effects. The coefficient of `did` remains 0.008 and highly significant at the 1% level across specifications, confirming robustness against regional unobservables.  
+
+
+
+### 4.4.3 Parallel Trend Test  
+
+A necessary condition for the DID approach is the parallel trend assumption. Figure 1 plots the event-study results.  
+
+![Parallel Trend Test](output/figures/平行趋势检验.svg)  
+
+The coefficients before policy implementation are statistically indistinguishable from zero, validating the parallel trend assumption. Post-policy coefficients turn significantly positive, indicating that the effect emerges gradually after the policy intervention.  
+
+---
+
+### 4.4.4 Placebo Test  
+
+To rule out spurious correlations, a placebo test is conducted by randomly assigning firms to treatment groups 500 times.  
+
+**Kernel Density of Placebo Estimates**  
+![Placebo Test - Density](output/figures/安慰剂1.svg)  
+
+**Distribution of Placebo P-values**  
+![Placebo Test - P-values](output/figures/安慰剂2.svg)  
+
+The placebo estimates are centered around zero and insignificant, while the true DID estimate lies at the far right tail, supporting the robustness of the baseline findings.  
+
+
+
+### 4.4.5 PSM-DID  
+
+To mitigate sample selection bias, PSM-DID is applied with three matching strategies (1:3 nearest neighbor, caliper, and kernel matching).  
+
+![PSM-DID Matching Graph](output/figures/近邻匹配psgraph.svg)  
+
+Table 9 reports consistent positive and significant coefficients of `did` across all matching methods, further confirming the policy’s effect.  
+
+
+
+### 4.4.6 Excluding Other Concurrent Policies  
+
+Table 10 incorporates concurrent regional policies such as Low-Carbon City pilots, ETS pilots, and Smart City pilots as controls. The coefficient of `did` remains positive and significant, indicating the effect is independent of these policies.  
+
+
+### 4.4.7 Alternative Dependent Variables  
+
+To validate robustness, alternative proxies for green transformation are used: carbon performance (`cperf`) and green investment ratio (`epi`).  
+
+Table 11 shows that `did` significantly improves both indicators, confirming that the findings do not depend on a particular measure of green transformation.  
+
 
 ---
 
