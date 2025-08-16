@@ -343,7 +343,17 @@ Table 8 shows regression results with province- and city-level fixed effects. Th
 
 ### 4.4.3 Parallel Trend Test  
 
-A necessary condition for the DID approach is the parallel trend assumption. Figure 1 plots the event-study results.  
+A key prerequisite for the Difference-in-Differences (DID) model is the **parallel trend assumption**, which requires that the treatment group and the control group follow a similar trend before the policy intervention. If this assumption does not hold, the post-policy differences in firms’ green transition outcomes may simply reflect inherent trend differences rather than the true policy effect.  
+
+To verify this assumption, we employ an **event study specification**:  
+
+$$
+Y_{it} = \alpha + \sum_k \beta_k D_{it}^k + \sum Controls_{it} + \mu_i + \lambda_t + \varepsilon_{it}
+$$  
+
+where $D_{it}^k$ is a set of dummy variables representing the relative year $k$ with respect to the policy implementation (with $k=0$ being the implementation year). The coefficients of interest are those with $k < 0$. If these coefficients are not significantly different from zero, it indicates no pre-trend differences, thereby supporting the validity of the parallel trend assumption.  
+
+The figure below plots the estimated coefficients for $k \in [-5, +5]$:  
 
 ![Parallel Trend Test](output/figures/平行趋势检验.svg)  
 **Figure 1. Parallel Trend Test**
