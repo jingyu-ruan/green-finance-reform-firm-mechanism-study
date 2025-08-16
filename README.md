@@ -355,11 +355,13 @@ The coefficients before policy implementation are statistically indistinguishabl
 
 To rule out spurious correlations, a placebo test is conducted by randomly assigning firms to treatment groups 500 times.  
 
-**Kernel Density of Placebo Estimates**  
-![Placebo Test - Density](output/figures/安慰剂1.svg)  
 
-**Distribution of Placebo P-values**  
+![Placebo Test - Density](output/figures/安慰剂1.svg)  
+**Figure 2. Kernel Density of Placebo Estimates**  
+
+
 ![Placebo Test - P-values](output/figures/安慰剂2.svg)  
+**Figure 3. Distribution of Placebo P-values**  
 
 The placebo estimates are centered around zero and insignificant, while the true DID estimate lies at the far right tail, supporting the robustness of the baseline findings.  
 
