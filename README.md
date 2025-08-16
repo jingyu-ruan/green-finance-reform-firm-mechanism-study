@@ -110,15 +110,17 @@ The **core dependent variable** is the *Green Transformation Index*. Following e
 
 **Table 1. Construction of the Green Transformation Index**
 
-| Dimension            | Sub-Indicator         | Definition                                                                 |
-| Technological Innovation | Green innovation output | Annual number of green patent applications filed by the firm                |
-| Production Level     | Total factor productivity | Firm-level TFP estimated via the LP method                                  |
-|                      | Labor productivity    | Ratio of total revenue to number of employees                               |
-| Pollution Reduction  | Pollution treatment   | Disclosure on wastewater, waste gas, and solid waste management             |
-|                      | Clean production      | Disclosure on clean production facilities                                   |
-| Environmental Protection | Environmental management | Disclosure on environmental information, management systems, emergency mechanisms, and the Three Simultaneous System (design, construction, and operation of environmental protection facilities simultaneously with the main project)  |
-|                      | Environmental supervision | Inclusion in key pollution monitoring list, environmental accidents, violations, complaints, ISO certification |
-| Social Evaluation    | ESG rating            | Huazheng ESG rating scores (mapped from 9 = highest to 1 = lowest)          |
+| Dimension              | Sub-Indicator           | Definition                                                                 |
+|------------------------|-------------------------|----------------------------------------------------------------------------|
+| Technological Innovation | Green innovation output | Annual number of green patent applications filed by the firm               |
+| Production Level       | Total factor productivity | Firm-level TFP estimated via the LP method                                 |
+|                        | Labor productivity      | Ratio of total revenue to number of employees                              |
+| Pollution Reduction    | Pollution treatment     | Disclosure on wastewater, waste gas, and solid waste management            |
+|                        | Clean production        | Disclosure on clean production facilities                                  |
+| Environmental Protection | Environmental management | Disclosure on environmental info, management systems, emergency mechanisms, and the Three Simultaneous System |
+|                        | Environmental supervision | Inclusion in key pollution monitoring list, environmental accidents, violations, complaints, ISO certification |
+| Social Evaluation      | ESG rating              | Huazheng ESG rating scores (mapped from 9 = highest to 1 = lowest)         |
+
 
 The **core explanatory variable** is the *policy dummy* of the Green Finance Reform and Innovation Pilot Zone, defined as the interaction between the treatment group dummy and the policy implementation time dummy.  
 
@@ -133,6 +135,7 @@ To minimize omitted variable bias, a set of firm-level controls is included.
 **Table 2. Control Variables**
 
 | Variable Name        | Symbol    | Definition                                                                 |
+|------------------------|-------------------------|
 | Leverage ratio       | lev       | Total liabilities / total assets                                           |
 | Asset turnover       | ato       | Operating revenue / average total assets                                   |
 | Cash flow ratio      | cashflow  | Net cash flow from operations / total assets                               |
