@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- This is a Stata 17.0 generated SVG file (http://www.stata.com) -->
+
+<svg version="1.1" width="5.500in" height="4.000in" viewBox="0 0 3960 2880" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>Stata Graph - 近邻匹配psgraph</desc>
+	<rect x="0" y="0" width="3960" height="2880" style="fill:#FFFFFF;stroke:none"/>
+	<rect x="0.00" y="0.00" width="3959.88" height="2880.00" style="fill:#FFFFFF"/>
+	<rect x="2.88" y="2.88" width="3954.12" height="2874.24" style="fill:none;stroke:#FFFFFF;stroke-width:5.76"/>
+	<rect x="130.80" y="100.86" width="3728.22" height="1992.81" style="fill:#FFFFFF"/>
+	<rect x="133.68" y="103.74" width="3722.46" height="1987.05" style="fill:none;stroke:#FFFFFF;stroke-width:5.76"/>
+	<line x1="130.80" y1="1058.47" x2="3859.02" y2="1058.47" style="stroke:#A0A0A0;stroke-width:5.76"/>
+	<rect x="194.16" y="1058.47" width="323.73" height="5.94" style="fill:#808080"/>
+	<rect x="197.04" y="1061.35" width="317.97" height="0.18" style="fill:none;stroke:#606060;stroke-width:5.76"/>
+	<rect x="598.83" y="1058.47" width="323.73" height="301.46" style="fill:#808080"/>
+	<rect x="601.71" y="1061.35" width="317.97" height="295.70" style="fill:none;stroke:#606060;stroke-width:5.76"/>
+	<rect x="1003.49" y="1058.47" width="323.73" height="971.84" style="fill:#808080"/>
+	<rect x="1006.37" y="1061.35" width="317.97" height="966.08" style="fill:none;stroke:#606060;stroke-width:5.76"/>
+	<rect x="1408.15" y="1058.47" width="323.73" height="399.85" style="fill:#808080"/>
+	<rect x="1411.03" y="1061.35" width="317.97" height="394.09" style="fill:none;stroke:#606060;stroke-width:5.76"/>
+	<rect x="1812.81" y="1058.47" width="323.73" height="83.29" style="fill:#808080"/>
+	<rect x="1815.69" y="1061.35" width="317.97" height="77.53" style="fill:none;stroke:#606060;stroke-width:5.76"/>
+	<rect x="2217.48" y="1058.47" width="323.73" height="12.50" style="fill:#808080"/>
+	<rect x="2220.36" y="1061.35" width="317.97" height="6.74" style="fill:none;stroke:#606060;stroke-width:5.76"/>
+	<rect x="2622.14" y="1058.47" width="323.73" height="2.23" style="fill:#808080"/>
+	<rect x="2625.02" y="1057.81" width="317.97" height="3.53" style="fill:none;stroke:#606060;stroke-width:5.76"/>
+	<rect x="3026.80" y="1058.47" width="323.73" height="0.25" style="fill:#808080"/>
+	<rect x="3029.68" y="1055.83" width="317.97" height="5.51" style="fill:none;stroke:#606060;stroke-width:5.76"/>
+	<rect x="194.16" y="1051.91" width="323.73" height="6.56" style="fill:#4D4D4D"/>
+	<rect x="197.04" y="1054.79" width="317.97" height="0.80" style="fill:none;stroke:#202020;stroke-width:5.76"/>
+	<rect x="598.83" y="803.16" width="323.73" height="255.30" style="fill:#4D4D4D"/>
+	<rect x="601.71" y="806.04" width="317.97" height="249.54" style="fill:none;stroke:#202020;stroke-width:5.76"/>
+	<rect x="1003.49" y="164.22" width="323.73" height="894.25" style="fill:#4D4D4D"/>
+	<rect x="1006.37" y="167.10" width="317.97" height="888.49" style="fill:none;stroke:#202020;stroke-width:5.76"/>
+	<rect x="1408.15" y="563.33" width="323.73" height="495.14" style="fill:#4D4D4D"/>
+	<rect x="1411.03" y="566.21" width="317.97" height="489.38" style="fill:none;stroke:#202020;stroke-width:5.76"/>
+	<rect x="1812.81" y="960.21" width="323.73" height="98.26" style="fill:#4D4D4D"/>
+	<rect x="1815.69" y="963.09" width="317.97" height="92.50" style="fill:none;stroke:#202020;stroke-width:5.76"/>
+	<rect x="2217.48" y="1034.58" width="323.73" height="23.88" style="fill:#4D4D4D"/>
+	<rect x="2220.36" y="1037.46" width="317.97" height="18.12" style="fill:none;stroke:#202020;stroke-width:5.76"/>
+	<rect x="2622.14" y="1054.01" width="323.73" height="4.46" style="fill:#4D4D4D"/>
+	<rect x="2625.02" y="1055.59" width="317.97" height="1.30" style="fill:none;stroke:#202020;stroke-width:5.76"/>
+	<rect x="3026.80" y="1058.22" width="323.73" height="0.25" style="fill:#4D4D4D"/>
+	<rect x="3029.68" y="1055.59" width="317.97" height="5.51" style="fill:none;stroke:#202020;stroke-width:5.76"/>
+	<line x1="130.80" y1="2093.67" x2="130.80" y2="100.86" style="stroke:#404040;stroke-width:5.76"/>
+	<line x1="130.80" y1="2093.67" x2="3859.02" y2="2093.67" style="stroke:#404040;stroke-width:5.76"/>
+	<line x1="558.36" y1="2093.67" x2="558.36" y2="2133.64" style="stroke:#404040;stroke-width:5.76"/>
+	<text x="558.36" y="2223.62" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" text-anchor="middle">.3</text>
+	<line x1="1367.69" y1="2093.67" x2="1367.69" y2="2133.64" style="stroke:#404040;stroke-width:5.76"/>
+	<text x="1367.69" y="2223.62" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" text-anchor="middle">.4</text>
+	<line x1="2177.01" y1="2093.67" x2="2177.01" y2="2133.64" style="stroke:#404040;stroke-width:5.76"/>
+	<text x="2177.01" y="2223.62" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" text-anchor="middle">.5</text>
+	<line x1="2986.34" y1="2093.67" x2="2986.34" y2="2133.64" style="stroke:#404040;stroke-width:5.76"/>
+	<text x="2986.34" y="2223.62" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" text-anchor="middle">.6</text>
+	<line x1="3795.66" y1="2093.67" x2="3795.66" y2="2133.64" style="stroke:#404040;stroke-width:5.76"/>
+	<text x="3795.66" y="2223.62" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" text-anchor="middle">.7</text>
+	<text x="1994.97" y="2333.64" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" text-anchor="middle">Propensity Score</text>
+	<rect x="1505.54" y="2418.27" width="978.74" height="326.34" style="fill:#FFFFFF"/>
+	<rect x="1508.42" y="2421.15" width="972.98" height="320.58" style="fill:none;stroke:#FFFFFF;stroke-width:5.76"/>
+	<rect x="1548.86" y="2461.46" width="374.34" height="99.99" style="fill:#808080"/>
+	<rect x="1551.73" y="2464.34" width="368.58" height="94.23" style="fill:none;stroke:#606060;stroke-width:5.76"/>
+	<rect x="1548.86" y="2601.43" width="374.34" height="99.99" style="fill:#4D4D4D"/>
+	<rect x="1551.73" y="2604.31" width="368.58" height="94.23" style="fill:none;stroke:#202020;stroke-width:5.76"/>
+	<text x="1983.22" y="2546.49" style="font-family:'Helvetica';font-size:99.99px;fill:#000000">Untreated</text>
+	<text x="1983.22" y="2686.46" style="font-family:'Helvetica';font-size:99.99px;fill:#000000">Treated</text>
+</svg>

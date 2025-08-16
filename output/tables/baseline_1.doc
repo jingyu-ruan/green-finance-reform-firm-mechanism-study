@@ -1,0 +1,36 @@
+{\rtf1\fs24
+\trowd\trgaph75\trleft-75\intbl\trqc\clbrdrt\brdrs\cellx1872\clbrdrt\brdrs\cellx3168\clbrdrt\brdrs\cellx4608\clbrdrt\brdrs\cellx6048
+\ql \cell\qc (1)\cell\qc (2)\cell\qc (3)\cell\row
+\trowd\trgaph75\trleft-75\trqc\cellx1872\cellx3168\cellx4608\cellx6048
+\trowd\trgaph75\trleft-75\trqc\clbrdrb\brdrs\cellx1872\clbrdrb\brdrs\cellx3168\clbrdrb\brdrs\cellx4608\clbrdrb\brdrs\cellx6048
+\ql VARIABLES\cell\qc index\cell\qc index\cell\qc index\cell\row
+\trowd\trgaph75\trleft-75\trqc\cellx1872\cellx3168\cellx4608\cellx6048
+\ql \cell\qc \cell\qc \cell\qc \cell\row
+\ql did\cell\qc 0.006**\cell\qc 0.015***\cell\qc 0.007***\cell\row
+\ql \cell\qc (2.37)\cell\qc (5.83)\cell\qc (2.60)\cell\row
+\ql lev\cell\qc \cell\qc -0.020***\cell\qc -0.019***\cell\row
+\ql \cell\qc \cell\qc (-3.36)\cell\qc (-3.25)\cell\row
+\ql ato\cell\qc \cell\qc 0.005\cell\qc 0.006**\cell\row
+\ql \cell\qc \cell\qc (1.59)\cell\qc (2.06)\cell\row
+\ql cashflow\cell\qc \cell\qc 0.023**\cell\qc 0.031***\cell\row
+\ql \cell\qc \cell\qc (1.98)\cell\qc (2.71)\cell\row
+\ql inv\cell\qc \cell\qc 0.023*\cell\qc 0.024**\cell\row
+\ql \cell\qc \cell\qc (1.94)\cell\qc (2.06)\cell\row
+\ql growth\cell\qc \cell\qc -0.002\cell\qc -0.001\cell\row
+\ql \cell\qc \cell\qc (-0.97)\cell\qc (-0.47)\cell\row
+\ql board\cell\qc \cell\qc 0.007\cell\qc 0.001\cell\row
+\ql \cell\qc \cell\qc (0.93)\cell\qc (0.12)\cell\row
+\ql indep\cell\qc \cell\qc 0.000\cell\qc 0.000\cell\row
+\ql \cell\qc \cell\qc (1.37)\cell\qc (0.35)\cell\row
+\ql firmage\cell\qc \cell\qc 0.145***\cell\qc 0.008\cell\row
+\ql \cell\qc \cell\qc (44.71)\cell\qc (0.92)\cell\row
+\ql Constant\cell\qc 0.089***\cell\qc -0.358***\cell\qc 0.060*\cell\row
+\ql \cell\qc (107.44)\cell\qc (-15.15)\cell\qc (1.85)\cell\row
+\ql \cell\qc \cell\qc \cell\qc \cell\row
+\ql Observations\cell\qc 11,909\cell\qc 11,909\cell\qc 11,909\cell\row
+\trowd\trgaph75\trleft-75\trqc\trbrdrb\brdrs\clbrdrb\brdrs\cellx1872\clbrdrb\brdrs\cellx3168\clbrdrb\brdrs\cellx4608\clbrdrb\brdrs\cellx6048
+\ql R-squared\cell\qc 0.683\cell\qc 0.659\cell\qc 0.683\cell\row
+\pard\qc
+t-statistics in parentheses\par
+*** p<0.01, ** p<0.05, * p<0.1\par
+}
